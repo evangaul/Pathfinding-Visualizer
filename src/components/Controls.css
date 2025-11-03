@@ -1,0 +1,184 @@
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+}
+
+.controls-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.controls-label {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.87);
+  white-space: nowrap;
+}
+
+.controls-select {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+  min-width: 200px;
+}
+
+.controls-select:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.controls-select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.controls-select:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.controls-button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.controls-button:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.4);
+  background-color: #2a2a2a;
+}
+
+.controls-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.controls-button-primary {
+  background-color: #646cff;
+  border-color: #646cff;
+}
+
+.controls-button-primary:hover:not(:disabled) {
+  background-color: #535bf2;
+  border-color: #535bf2;
+}
+
+.controls-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.controls-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.legend-start {
+  background-color: #4caf50;
+}
+
+.legend-end {
+  background-color: #f44336;
+}
+
+.legend-wall {
+  background-color: #212121;
+}
+
+.legend-visited {
+  background-color: #90caf9;
+}
+
+.legend-path {
+  background-color: #fff176;
+}
+
+.legend-weight {
+  background-color: #ffe082;
+  border: 1px dashed #ff9800;
+}
+
+@media (prefers-color-scheme: light) {
+  .controls {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .controls-label {
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  .controls-select {
+    background-color: #f9f9f9;
+    color: rgba(0, 0, 0, 0.87);
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .controls-select:hover:not(:disabled) {
+    border-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .controls-button {
+    background-color: #f9f9f9;
+    color: rgba(0, 0, 0, 0.87);
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .controls-button:hover:not(:disabled) {
+    background-color: #f0f0f0;
+  }
+
+  .controls-legend-item {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .legend-color {
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .controls-section {
+    justify-content: center;
+  }
+
+  .controls-info {
+    justify-content: center;
+  }
+}
+
