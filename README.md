@@ -1,10 +1,8 @@
 # Pathfinding Visualizer
 
-An interactive web application for visualizing pathfinding algorithms on a grid. Watch algorithms like Dijkstra, A*, BFS, and DFS find their way through mazes and custom obstacles in real-time.
+An interactive web application for visualizing pathfinding algorithms on a grid. Watch algorithms like Dijkstra, A*, BFS, and DFS find their way through mazes and custom obstacles.
 
-![Pathfinding Visualizer](https://img.shields.io/badge/React-19.1.1-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue) ![Vite](https://img.shields.io/badge/Vite-7.1.7-purple)
-
-## 🎯 Features
+## Features
 
 ### Algorithms
 - **Dijkstra's Algorithm** - Finds shortest path in weighted graphs
@@ -23,19 +21,18 @@ An interactive web application for visualizing pathfinding algorithms on a grid.
 ### Visualization
 - Real-time animation showing algorithm exploration
 - Color-coded nodes:
-  - 🟢 **Green** - Start node
-  - 🔴 **Red** - End node
-  - ⬛ **Black** - Walls
-  - 🔵 **Blue** - Visited nodes (explored by algorithm)
-  - 🟡 **Yellow** - Shortest path found
-  - 🟨 **Light Yellow or Orange** - Weighted nodes (with weight numbers displayed)
+  - **Green** - Start node
+  - **Red** - End node
+  - **Black** - Walls
+  - **Blue** - Visited nodes (explored by algorithm)
+  - **Yellow** - Shortest path found
+  - **Light Yellow or Orange** - Weighted nodes (with weight numbers displayed)
 
 ### Controls
 - **Clear Path** - Remove visualization but keep walls
 - **Clear Board** - Reset everything (walls, weights, visualization)
-- Fast visualization speed (0.5ms per step)
 
-## 🚀 Getting Started
+## How to Use
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -59,7 +56,7 @@ npm install
 npm run dev
 ```
 
-4. Open your browser and navigate to the URL shown (typically `http://localhost:5173`)
+4. Open your browser and navigate to the URL 
 
 ### Build for Production
 
@@ -69,9 +66,7 @@ npm run build
 
 The built files will be in the `dist` directory.
 
-## How to Use
-
-### Basic Usage
+## Basic Usage
 
 1. **Set up your grid**:
    - Use "Place Walls" tool to create obstacles (click or drag)
@@ -94,7 +89,7 @@ The built files will be in the `dist` directory.
 - **Generate Maze** creates a perfect maze with exactly one solution path
 - **Drag to draw** walls for faster obstacle placement
 
-## 🔬 Algorithms Explained
+## Algorithms Explained
 
 ### Dijkstra's Algorithm
 - **Type**: Weighted shortest path
@@ -104,7 +99,7 @@ The built files will be in the `dist` directory.
 
 ### A* Search
 - **Type**: Weighted heuristic-guided
-- **Guarantees**: Shortest path (with admissible heuristic)
+- **Guarantees**: Shortest path 
 - **Uses**: f(n) = g(n) + h(n) where h(n) is Manhattan distance
 - **Best for**: Fast optimal pathfinding with heuristic guidance
 
@@ -125,7 +120,7 @@ The built files will be in the `dist` directory.
 ```
 Pathfinding-Visualizer/
 ├── src/
-│   ├── App.tsx              # Main application component
+│   ├── App.tsx              # Main application component!
 │   ├── main.tsx              # React entry point
 │   ├── components/
 │   │   ├── Grid.tsx          # Grid component with node management
@@ -143,33 +138,11 @@ Pathfinding-Visualizer/
 └── README.md
 ```
 
-## 🛠️ Technologies
-
-- **React 19.1.1** - UI framework
-- **TypeScript 5.9.3** - Type safety
-- **Vite 7.1.7** - Build tool and dev server
-- **CSS3** - Styling
-
-## Color Legend
-
-- 🟢 **Green** - Start node
-- 🔴 **Red** - End node
-- ⬛ **Black** - Wall (impassable)
-- 🔵 **Blue** - Visited (nodes explored by algorithm)
-- 🟡 **Yellow** - Path (final shortest path)
-- 🟨 **Yellow/Orange** - Weighted nodes (higher traversal cost)
-
-## Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run lint` - Run ESLint
-- `npm run preview` - Preview production build
-
 
 ## License
+Free to use
 
-
----
-
-**Enjoy visualizing pathfinding algorithms!**
+## Possible Future Add Ons
+- Animation Speed control
+- Add statistics like path length, nodes visited, and time
+- Add algo comparison mode
